@@ -1,9 +1,13 @@
+<!-- Import necessary assets -->
 <script>
 	import blueWaves from '$lib/assets/blueWaves.svg';
 </script>
 
+<!-- Jobs section -->
 <section id="jobs">
+	<!-- Container for job cards -->
 	<div class="cards-container">
+		<!-- Job card for Website Builder Head -->
 		<div class="card">
 			<h1>Website Builder Head</h1>
 			<ul class="card-list">
@@ -11,6 +15,7 @@
 				<li>Develop leadership abilities</li>
 			</ul>
 		</div>
+		<!-- Job card for Website Builder / Designer -->
 		<div class="card">
 			<h1>Website Builder / Designer</h1>
 			<ul class="card-list">
@@ -19,7 +24,9 @@
 			</ul>
 		</div>
 	</div>
+	<!-- Container for more job cards -->
 	<div class="cards-container">
+		<!-- Job card for Graphic Designer -->
 		<div class="card">
 			<h2 class="asterisk">*</h2>
 			<h1 class="special-h1">Graphic Designer</h1>
@@ -28,6 +35,7 @@
 				<li>Draw Colby!</li>
 			</ul>
 		</div>
+		<!-- Job card for PR Member -->
 		<div class="card">
 			<h2 class="asterisk">*</h2>
 			<h1 class="special-h1">PR Member</h1>
@@ -36,6 +44,7 @@
 				<li>Coordinate with Graphic Designers and Digital Marketing</li>
 			</ul>
 		</div>
+		<!-- Job card for Project Designer -->
 		<div class="card">
 			<h2 class="asterisk">*</h2>
 			<h1 class="special-h1">Project Designer</h1>
@@ -46,16 +55,19 @@
 			</ul>
 		</div>
 	</div>
+	<!-- Note about commitment level -->
 	<p>* These require less commitment</p>
+	<!-- Apply button linking to Google Forms -->
 	<a
 		href="https://docs.google.com/forms/d/e/1FAIpQLSewG6jXziVNkJgq_NvmdvO5BirikFQCoull85WH2_VK2Cec1g/viewform"
 		target="_blank"
 		rel="noopener noreferrer"
-		id="apply"><button class="btn">Apply</button></a
-	>
+		id="apply"><button class="btn">Apply</button></a>
 </section>
 
+<!-- Styling for the jobs section and its elements -->
 <style>
+	/* Jobs section styling */
 	#jobs {
 		background-color: var(--violet);
 		height: 100%;
@@ -66,6 +78,7 @@
 		align-items: center;
 		padding: 60px 0;
 	}
+	/* Cards container styling */
 	.cards-container {
 		display: flex;
 		flex-direction: row;
@@ -73,6 +86,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+	/* Card styling */
 	.card {
 		background-color: white;
 		width: 300px;
@@ -81,15 +95,18 @@
 		transition: 0.2s;
 		line-height: 1.5rem;
 	}
+	/* Card hover effect */
 	.card:hover {
 		transform: translateY(-5px);
 	}
+	/* Asterisk styling */
 	.asterisk {
 		color: var(--red-dark);
 		margin: 10px 0 0 20px;
 		font-size: 2rem;
 		user-select: none;
 	}
+	/* Card header styling */
 	.card h1 {
 		text-align: center;
 		font-weight: 700;
@@ -100,18 +117,22 @@
 		margin: 80px 0 50px 0;
 		line-height: 1.8rem;
 	}
+	/* Special header styling */
 	.special-h1 {
 		margin-top: 30px !important;
 	}
+	/* List styling inside card */
 	.card-list {
 		list-style: disc;
 		color: var(--violet);
 		font-size: 1.2rem;
 		padding: 0 50px;
 	}
+	/* List item styling */
 	.card-list li {
 		margin: 10px 0;
 	}
+	/* Paragraph styling */
 	p {
 		text-align: center;
 		color: var(--red-dark);
